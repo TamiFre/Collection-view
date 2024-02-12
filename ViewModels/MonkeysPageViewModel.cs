@@ -17,6 +17,7 @@ namespace MonkeysMVVM.ViewModels
         public ICommand LoadCommand{get;private set;}
         public MonkeysPageViewModel() 
         {
+            //
             Monkeys = new ObservableCollection<Monkey>();
             LoadCommand = new Command(async () => await LoadByCommand()) ;
             
